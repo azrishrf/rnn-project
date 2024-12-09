@@ -1,0 +1,2 @@
+.23,42
+23|42|Then after them, We created other generations.

@@ -1,0 +1,2 @@
+.37,106
+37|106|Indeed this was a clear test.

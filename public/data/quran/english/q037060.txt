@@ -1,0 +1,2 @@
+.37,60
+37|60|“This is, most certainly, the supreme success.”

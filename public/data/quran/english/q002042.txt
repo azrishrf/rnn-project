@@ -1,0 +1,2 @@
+.2,42
+2|42|And do not mix the truth with falsehood, nor purposely conceal the truth.

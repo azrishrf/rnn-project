@@ -1,0 +1,2 @@
+.23,25
+23|25|“He is not but a man insane, therefore wait for some time.”

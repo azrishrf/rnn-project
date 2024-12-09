@@ -1,0 +1,2 @@
+.38,67
+38|67|Say, “That is a great tidings.”

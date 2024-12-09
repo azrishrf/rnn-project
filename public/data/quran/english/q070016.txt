@@ -1,0 +1,2 @@
+.70,16
+70|16|A fire that melts the hide.

@@ -1,0 +1,2 @@
+.15,44
+15|44|It has seven gates; for each gate is a portion assigned from them.

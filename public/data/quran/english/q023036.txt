@@ -1,0 +1,2 @@
+.23,36
+23|36|“How remote, (really) how remote is the promise you are given!”

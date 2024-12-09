@@ -1,0 +1,2 @@
+.89,3
+89|3|Dan bilangan yang genap serta yang ganjil;
