@@ -9,7 +9,7 @@ type PopupProps = {
   onClose: () => void;
 };
 
-const SearchResultPopup = ({
+const SearchResultPopupHadith = ({
   searchText,
   resultType,
   semanticType,
@@ -35,10 +35,10 @@ const SearchResultPopup = ({
       setError(null);
 
       try {
-        const response = await fetch("/api/search", {
+        const response = await fetch("/api/searchQuran", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ wordsArray, semanticType }),
+          body: JSON.stringify({ processType, wordsArray, semanticType }),
         });
 
         if (!response.ok) {
@@ -144,11 +144,16 @@ const SearchResultPopup = ({
       }
 
       elements.push(
-        <div
-          key={`sentence-${idx}`}
-          className="bg-gray-100 p-2 mb-2 rounded break-words whitespace-normal"
-          dangerouslySetInnerHTML={{ __html: highlightKeywords(sentence.content) }}
-        />
+        <div key={`file-${idx}`} className="mb-2">
+          <p className="text-gray-500 italic text-sm">{sentence.surah}</p>
+          <p className="text-gray-500 italic text-sm">
+            {`${sentence.fileName}:${parseInt(sentence.fileName.slice(-3), 10)}`}{" "}
+          </p>
+          <div
+            className="bg-gray-100 p-2 rounded break-words whitespace-normal"
+            dangerouslySetInnerHTML={{ __html: highlightKeywords(sentence.content) }}
+          />
+        </div>
       );
     });
 
@@ -213,4 +218,4 @@ const SearchResultPopup = ({
   );
 };
 
-export default SearchResultPopup;
+export default SearchResultPopupHadith;

@@ -200,6 +200,10 @@ const Quran = () => {
           "Malay Query Malay Document",
           "Stemming Malay Query Malay Document",
           "Stemming Malay Query Stemming Malay Document",
+
+          "English Query English Document",
+          "Stemming English Query English Document",
+          "Stemming English Query Stemming English Document",
         ].map((option, index) => (
           <label
             key={index}
@@ -223,7 +227,7 @@ const Quran = () => {
       {isPopupOpen && (
         <SearchResultPopup
           searchText={searchText}
-        //   selectedTxt={selectedTxt}
+          //   selectedTxt={selectedTxt}
           resultType={resultType}
           semanticType={semanticType}
           processType={processType}
